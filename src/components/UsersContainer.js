@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { fetchUsers } from '../redux'
 
 function UsersContainer ({ userData, fetchUsers }) {
+  console.log(userData, "hh");
   useEffect(() => {
     fetchUsers()
   }, [])
@@ -23,6 +24,7 @@ function UsersContainer ({ userData, fetchUsers }) {
 }
 
 const mapStateToProps = state => {
+  // debugger;
   return {
     userData: state.user
   }

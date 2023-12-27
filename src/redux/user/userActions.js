@@ -5,6 +5,8 @@ import {
   FETCH_USERS_FAILURE
 } from './userTypes'
 
+// Redux Thunk middleware allows you to write action creators that return a 
+// function instead of an action.
 export const fetchUsers = () => {
   return (dispatch) => {
     dispatch(fetchUsersRequest())
